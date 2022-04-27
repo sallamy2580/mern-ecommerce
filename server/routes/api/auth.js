@@ -335,6 +335,7 @@ router.get(
 
     jwt.sign(payload, secret, { expiresIn: tokenLife }, (err, token) => {
       const jwt = `Bearer ${token}`;
+      // TODO duplicate variable name. variable name conflict with module instance
 
       const htmlWithEmbeddedJWT = `
     <html>
