@@ -9,7 +9,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'reactstrap';
 
-import { formatDate } from '../../../helpers/date';
+import { formatDate } from '../../../utils/date';
 import Button from '../../Common/Button';
 
 const OrderMeta = props => {

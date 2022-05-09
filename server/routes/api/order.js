@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-// Bring in Models & Helpers
+// Bring in Models & Utils
 const Order = require('../../models/order');
 const Cart = require('../../models/cart');
 const Product = require('../../models/product');
 const auth = require('../../middleware/auth');
 const mailgun = require('../../services/mailgun');
-const store = require('../../helpers/store');
+const store = require('../../utils/store');
 
 router.post('/add', auth, async (req, res) => {
   try {
